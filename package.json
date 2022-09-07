@@ -1,0 +1,17 @@
+{
+  "name": "tongarirocinemas",
+  "version": "1.0.0",
+  "description": "Tongariro Cinemas website",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "watch": "npx tailwindcss -i ./src/styles/main.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/styles/main.css -o ./dist/output.css"
+  },
+  "keywords": [ ],
+  "author": "Hugh Lilly",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
