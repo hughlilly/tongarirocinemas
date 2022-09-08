@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Tongariro Cinemas — Home</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
+    
     <!-- Carousel adapted from https://www.tailwindtoolbox.com/components/carousel -->
     <style>
         .carousel-open:checked + .carousel-item {
             position: static;
             opacity: 100;
-        }
-        
-        .carousel-item {
-            -webkit-transition: opacity 0.3s ease-out;
-            -moz-transition: opacity 0.3s ease-out;
-            -o-transition: opacity 0.3s ease-out;
-            transition: opacity 0.3s ease-out;
         }
 
         #carousel-1:checked ~ .control-1,
@@ -47,81 +47,168 @@
         /* TODO: Use variable for colour --  same as hover state for nav links? */
         }
     </style>
+
 </head>
 
 <body class="bg-white font-sans leading-normal tracking-normal">
-    <nav class="relative container mx-auto p-6">
+
+    <!-- Navigation bar, including logo -->
+    <nav class="relative p-6 mx-auto my-3 md:mx-4 lg:mx-6 xl:mx-10">
         <!-- Flex container -->
-        <div class="flex items-center justify-between">
-            <!-- Logo -->
-            <div class="pt-2">
-                <a href="index.html"><img src="assets/logos_icons/logo.png" alt="Tongariro Cinemas logo"></a>
+        <div class="flex place-items-center justify-between">
+            
+            <!-- Logo and wordmark -->
+            <a href="index.html" class="no-underline">
+            <div id="logo-wordmark">
+                <div id="logo" class="flex space-x-4">
+                        <img src="assets/logos_icons/logo.png" alt="Tongariro Cinemas logo" class="max-h-8 max-w-">
+                    <div id="wordmark" class="flex font-wordmark font-extrabold text-xl uppercase place-items-center">
+                        Tongariro Cinemas
+                    </div>
+                </div>
             </div>
+            </a>
+            
             <!-- Menu items -->
-            <div class="hidden md:flex space-x-9">
-                <a href="#" class="hover:text-blue-900 hover:underline hover:underline-offset-4">Tickets</a>
-                <a href="#" class="hover:text-blue-900 hover:underline hover:underline-offset-4">About Us</a>
-                <a href="#" class="hover:text-blue-900 hover:underline hover:underline-offset-4">Newsletter</a>
-                <a href="#" class="hover:text-blue-900 hover:underline hover:underline-offset-4">Log in</a>
+            <div id="nav-menu" class="hidden md:flex space-x-9">
+                <a href="#" class="hover:text-blue-800 hover:underline hover:underline-offset-4">Now Playing</a>
+                <a href="#" class="hover:text-blue-800 hover:underline hover:underline-offset-4">Tickets</a>
+                <a href="#" class="hover:text-blue-800 hover:underline hover:underline-offset-4">Rewards</a>
+                <a href="#" class="hover:text-blue-800 hover:underline hover:underline-offset-4">About Us</a>
             </div>
     </div>
     </nav>
-    <!-- Carousel adapted from https://www.tailwindtoolbox.com/components/carousel -->
-    <div class="carousel relative mx-auto">
-        <div class="carousel-inner relative overflow-hidden">
-        <!--Slide 1-->
-		<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-		<div class="carousel-item absolute opacity-0">
-            <img src="assets/carousel/Vertigo.jpg" alt="Vertigo">
-		</div>
-		<label for="carousel-4" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-		
-		<!--Slide 2-->
-		<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0">
-            <img src="assets/carousel/Sunset.jpg" alt="Sunset Boulevard">
-		</div>
-		<label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
-		
-		<!--Slide 3-->
-		<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0">
-			<img src="assets/carousel/Streetcar.jpg" alt="A Streetcar Named Desire">
-		</div>
-		<label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-4" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-        <!--Slide 4-->
-		<input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0">
-			<img src="assets/carousel/RearWindow.jpg" alt="Rear Window">
-		</div>        
-		<label for="carousel-3" class="prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-1" class="next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+    <section class="bg-slate-100">
+    <!-- Carousel, adapted from https://www.tailwindtoolbox.com/components/carousel -->
+        <div class="carousel relative md:mx-auto md:px-6 md:py-12 max-w-screen-md overflow-hidden">
+            <div class="carousel-inner relative">
+        
+        
+                <!--Slide 1-->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        
+                <div class="carousel-item absolute opacity-0">
+                    <img class="shadow-lg rounded" src="assets/carousel/Vertigo.jpg" alt="Vertigo">
+                </div>
+        
+                <label for="carousel-4" class="hidden prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 left-0 my-auto">&lsaquo;</label>
+                <label for="carousel-2" class="hidden next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 right-0 my-auto">&rsaquo;</label>
+        
+                <!--Slide 2-->
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0">
+                    <img class="shadow-lg rounded" src="assets/carousel/Sunset.jpg" alt="Sunset Boulevard">
+                </div>
+                <label for="carousel-1" class="hidden prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 left-0 my-auto">&lsaquo;</label>
+                <label for="carousel-3" class="hidden next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 right-0 my-auto">&rsaquo;</label>
+                <!--Slide 3-->
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0">
+                    <img class="shadow-lg rounded" src="assets/carousel/Streetcar.jpg" alt="A Streetcar Named Desire">
+                </div>
+                <label for="carousel-2" class="hidden prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 left-0 my-auto">&lsaquo;</label>
+                <label for="carousel-4" class="hidden next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 right-0 my-auto">&rsaquo;</label>
+                <!--Slide 4-->
+                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0">
+                    <img class="shadow-lg rounded" src="assets/carousel/RearWindow.jpg" alt="Rear Window">
+                </div>
+                <label for="carousel-3" class="hidden prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 left-0 my-auto">&lsaquo;</label>
+                <label for="carousel-1" class="hidden next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 right-0 my-auto">&rsaquo;</label>
+                <!-- Add additional indicators for each slide-->
+                <ol class="carousel-indicators absolute">
+                    <li class="inline-block mr-3">
+                        <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-800">&bull;</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-800">&bull;</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-800">&bull;</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-4" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-800">&bull;</label>
+                    </li>
+                </ol>
+        
+            </div>
+        </div>
+    </section>
 
-		<!-- Add additional indicators for each slide-->
-		<ol class="carousel-indicators relative">
-			<li class="inline-block mr-3">
-				<label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-900">•</label>
-			</li>
-			<li class="inline-block mr-3">
-				<label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-900">•</label>
-			</li>
-			<li class="inline-block mr-3">
-				<label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-900">•</label>
-			</li>
-			<li class="inline-block mr-3">
-				<label for="carousel-4" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-900">•</label>
-			</li>
-		</ol>
-		
-	</div>
-</div>
-<!-- <main>Main content here</main> -->
-    <!-- <footer>
-        <a href="https://iconscout.com/icons/cinema-reel" target="_blank">Cinema reel Icon</a> by <a href="https://iconscout.com/contributors/iconscout">IconScout Store</a> on <a href="https://iconscout.com">IconScout</a>
-    </footer> -->
+
+    <main class="m-auto p-10 md:px-14 max-w-4xl text-center md:text-left flex flex-col space-y-10 md:space-y-20 first-of-type:md:pt-28 last-of-type:md:pb-36">
+
+        <!-- Now Playing section -->
+        <section id="now-playing">
+            <h1 class="text-xl md:pl-4">Now Playing</h1>
+            <div class="flex flex-col-reverse md:flex-row">
+                <div class="px-4 pt-5">
+                    See a list of films currently playing.
+                </div>
+                <img src="assets/logos_icons/playing.png" alt="View currently playing films"
+                class="flex flex-row align-middle h-16 m-auto md:px-9 md:mr-0 pt-4 md:pt-0">
+            </div>
+        </section>       
+
+        <hr width="65%" class="m-auto" />
+
+        <!-- Tickets section -->
+        <section id="tickets">
+            <h1 class="text-xl md:pl-4">Tickets</h1>
+            <div class="flex flex-col-reverse md:flex-row">
+                <div class="px-4 pt-5">
+                    View available seats and buy tickets to upcoming screenings.
+                </div>
+                <img src="assets/logos_icons/ticket.png" alt="View available seats and buy tickets to upcoming screenings"
+                class="flex flex-row align-middle h-16 m-auto md:px-9 md:mr-0 pt-4 md:pt-0">
+            </div>
+        </section>
+
+        <hr width="65%" class="m-auto" />
+
+
+        <!-- Rewards section -->
+        <section id="rewards">
+            <h1 class="text-xl md:pl-4">Rewards</h1>
+            <div class="flex flex-col-reverse md:flex-row">
+                <div class="px-4 pt-5">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Perferendis unde explicabo, voluptas repudiandae asperiores omnis.
+                    Adipisci eaque quasi quaerat illo reprehenderit placeat architecto beatae soluta!
+                    Debitis deserunt facere dignissimos nobis?
+                </div>
+                <img src="assets/logos_icons/member.png" alt="Click here to sign up for our rewards programme"
+                class="flex flex-row align-middle h-16 m-auto md:px-9 md:mr-0 pt-4 md:pt-0">
+            </div>
+        </section>
+
+        <hr width="65%" class="m-auto" />
+        
+    
+        <!-- About section -->
+        <section id="about">
+            <h1 class="text-xl md:pl-4">About</h1>
+            <div class="flex flex-col-reverse md:flex-row">
+                <div class="px-4 pt-5">
+                    Read about the history of Tongariro Cinemas, our museum, and café…
+                </div>
+                <img src="assets/logos_icons/about.png" alt="Read about the history of Tongariro Cinemas, our museum, and café"
+                class="flex flex-row align-middle h-16 m-auto md:px-9 md:mr-0 pt-6 md:pt-0">
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="m-auto text-xs bg-gray-50 p-10 place-items-end text-center md:text-right">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div id="copyright" class="font-mono flex-row pb-3 md:pb-0" title="Site by Hugh Lilly (ID 20220344)">&copy; 2022 Tongariro Cinemas Ltd.</div>
+            <div id="image-credits">
+                Logo and icons from <a href="https://iconscout.com/icon-pack/cinema-53" target="_blank" class="underline">Cinema Icon Pack</a>
+                on <a href="https://iconscout.com"class="underline">IconScout</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
