@@ -48,12 +48,15 @@
         }
     </style>
 
+    <script src="scripts/script.js" type="module" defer></script>
+
 </head>
 
 <body class="bg-white font-sans leading-normal tracking-normal">
 
     <!-- Navigation bar, including logo -->
     <nav class="relative p-6 mx-auto my-3 md:mx-4 lg:mx-6 xl:mx-10">
+
         <!-- Flex container -->
         <div class="flex place-items-center justify-between">
             
@@ -61,8 +64,9 @@
             <a href="index.html" class="no-underline">
             <div id="logo-wordmark">
                 <div id="logo" class="flex space-x-4">
-                        <img src="assets/logos_icons/logo.png" alt="Tongariro Cinemas logo" class="max-h-8 max-w-">
-                    <div id="wordmark" class="flex font-wordmark font-extrabold text-xl uppercase place-items-center">
+                        <img src="assets/logos_icons/logo.png" alt="Tongariro Cinemas logo" class="max-h-8">
+                    <div id="wordmark"
+                    class="flex font-wordmark font-extrabold text-xl uppercase place-items-center">
                         Tongariro Cinemas
                     </div>
                 </div>
@@ -70,53 +74,76 @@
             </a>
             
             <!-- Menu items -->
-            <div id="nav-menu" class="hidden md:flex space-x-9">
+            <div id="nav-menu" class="hidden md:flex space-x-6">
                 <a href="#" class="hover:text-blue-800 hover:underline hover:underline-offset-4">Now Playing</a>
                 <a href="#" class="hover:text-blue-800 hover:underline hover:underline-offset-4">Tickets</a>
                 <a href="#" class="hover:text-blue-800 hover:underline hover:underline-offset-4">Rewards</a>
                 <a href="#" class="hover:text-blue-800 hover:underline hover:underline-offset-4">About Us</a>
             </div>
-    </div>
-    </nav>
 
-    <section class="bg-slate-100">
+
+            <!-- Hamburger menu (for mobile screens) -->
+            <button id="hamburger-button" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+
+            
+        </div>
+        
+    </nav>
+    
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden my-8 mx-20 flex-col items-center self-end py-8 space-y-4 sm:w-auto sm:self-center border">
+        <a href="#" class="">Now Playing</a>
+        <a href="#" class="">Tickets</a>
+        <a href="#" class="">Rewards</a>
+        <a href="#" class="">About Us</a>
+    </div>
+    
+    
+    <section class="">
     <!-- Carousel, adapted from https://www.tailwindtoolbox.com/components/carousel -->
         <div class="carousel relative md:mx-auto md:px-6 md:py-12 max-w-screen-md overflow-hidden">
             <div class="carousel-inner relative">
         
         
-                <!--Slide 1-->
+                <!-- Slide 1 -->
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-        
-                <div class="carousel-item absolute opacity-0">
-                    <img class="shadow-lg rounded" src="assets/carousel/Vertigo.jpg" alt="Vertigo">
+                <div class="carousel-item  absolute opacity-0">
+                    <img class="shadow-2xl rounded-3xl" src="assets/carousel/Vertigo.jpg" alt="Vertigo">
                 </div>
         
                 <label for="carousel-4" class="hidden prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 left-0 my-auto">&lsaquo;</label>
                 <label for="carousel-2" class="hidden next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 right-0 my-auto">&rsaquo;</label>
         
-                <!--Slide 2-->
+                <!-- Slide 2 -->
                 <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
                 <div class="carousel-item absolute opacity-0">
-                    <img class="shadow-lg rounded" src="assets/carousel/Sunset.jpg" alt="Sunset Boulevard">
+                    <img class="shadow-lg rounded-3xl" src="assets/carousel/Sunset.jpg" alt="Sunset Boulevard">
                 </div>
                 <label for="carousel-1" class="hidden prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 left-0 my-auto">&lsaquo;</label>
                 <label for="carousel-3" class="hidden next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 right-0 my-auto">&rsaquo;</label>
-                <!--Slide 3-->
+                
+                <!-- Slide 3 -->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
                 <div class="carousel-item absolute opacity-0">
-                    <img class="shadow-lg rounded" src="assets/carousel/Streetcar.jpg" alt="A Streetcar Named Desire">
+                    <img class="shadow-lg rounded-3xl" src="assets/carousel/Streetcar.jpg" alt="A Streetcar Named Desire">
                 </div>
                 <label for="carousel-2" class="hidden prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 left-0 my-auto">&lsaquo;</label>
                 <label for="carousel-4" class="hidden next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 right-0 my-auto">&rsaquo;</label>
-                <!--Slide 4-->
+                
+                <!-- Slide 4 -->
                 <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
                 <div class="carousel-item absolute opacity-0">
-                    <img class="shadow-lg rounded" src="assets/carousel/RearWindow.jpg" alt="Rear Window">
+                    <img class="shadow-lg rounded-3xl" src="assets/carousel/RearWindow.jpg" alt="Rear Window">
                 </div>
                 <label for="carousel-3" class="hidden prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 left-0 my-auto">&lsaquo;</label>
                 <label for="carousel-1" class="hidden next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-800 leading-tight text-center z-10 inset-y-0 right-0 my-auto">&rsaquo;</label>
-                <!-- Add additional indicators for each slide-->
+
+                
+                <!-- Indicators for slides -->
                 <ol class="carousel-indicators absolute">
                     <li class="inline-block mr-3">
                         <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-800">&bull;</label>
@@ -201,7 +228,7 @@
         
     </main>
 
-    <footer class="m-auto text-xs bg-gray-50 p-10 place-items-end text-center md:text-right">
+    <footer class="m-auto text-xs p-10 place-items-end text-center md:text-right">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between">
             <div id="copyright" class="font-mono flex-row pb-3 md:pb-0" title="Site by Hugh Lilly (ID 20220344)">&copy; 2022 Tongariro Cinemas Ltd.</div>
             <div id="image-credits">

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        wordmark: ["Aboreto", "cursive"],
+        wordmark: ["Aboreto", "sans-serif"],
       },
     },
   },
