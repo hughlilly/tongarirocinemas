@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tongariro Cinemas — About</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <script src="scripts/mobile-menu.js" type="module" defer></script>
+  </head>
+
+  <body class="bg-white font-sans leading-normal tracking-normal min-h-screen">
+    <header>
+      <!-- Navigation bar, including logo and mobile menu -->
+      <nav>
+        <div class="relative p-6 mx-auto my-3 md:mx-4 lg:mx-6 xl:mx-10">
+          <!-- Flex container -->
+          <div class="flex place-items-center justify-between">
+            <!-- Logo and wordmark -->
+            <a href="index.html" class="no-underline">
+              <div id="logo-wordmark">
+                <div id="logo" class="flex space-x-4">
+                  <img
+                    src="assets/logos_icons/logo.svg"
+                    alt="Tongariro Cinemas logo"
+                    class="h-[36px] w-[36px]"
+                  />
+                  <div
+                    id="wordmark"
+                    class="flex font-wordmark font-extrabold text-xl uppercase place-items-center"
+                  >
+                    Tongariro Cinemas
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Menu items -->
+            <div id="nav-menu" class="hidden md:flex space-x-6">
+              <a
+                href="now-playing.html"
+                class="hover:text-blue-800 hover:underline hover:underline-offset-4"
+                >Now Playing</a
+              >
+              <a
+                href="tickets.html"
+                class="hover:text-blue-800 hover:underline hover:underline-offset-4"
+                >Tickets</a
+              >
+              <a
+                href="rewards.html"
+                class="hover:text-blue-800 hover:underline hover:underline-offset-4"
+                >Rewards</a
+              >
+              <a
+                href="about.html"
+                class="hover:text-blue-800 hover:underline hover:underline-offset-4"
+                >About Us</a
+              >
+            </div>
+            <!-- Hamburger menu (for mobile screens) -->
+            <button
+              id="hamburger-button"
+              class="block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div
+          id="mobile-menu"
+          class="hidden my-8 mx-20 flex-col items-center self-end py-8 space-y-4 sm:w-auto sm:self-center border"
+        >
+          <a href="now-playing.html" class="">Now Playing</a>
+          <a href="tickets.html" class="">Tickets</a>
+          <a href="rewards.html" class="">Rewards</a>
+          <a href="about.html" class="">About Us</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="about-us"
+        class="m-auto px-12 md:px-14 max-w-4xl flex flex-col justify-between space-y-10 first-of-type:pt-12 last-of-type:pb-24 last-of-type:md:pb-12"
+      >
+        <h1 class="text-xl text-center pb-6">About Tongariro Cinemas</h1>
+        <img
+          src="assets/logos_icons/about.svg"
+          alt=""
+          class="h-[96px] w-[96px] align-middle m-auto"
+        />
+        <p class="pt-8">
+          Tongariro Cinemas has a long and illustrious history in Aotearoa New
+          Zealand. It was one of the first cinemas to screen
+          <em>Star Wars</em> in 1977, and has had a café and historical museum
+          attached since the early 1990s.
+        </p>
+        <p>
+          We have recently begun a programme of improvements which includes this
+          new website. Soon you'll be able to book seats online and pay with
+          your credit card, avoiding double-bookings!
+        </p>
+      </section>
+    </main>
+
+    <footer
+      class="sticky top-[100vh] m-auto text-xs p-10 place-items-end text-center md:text-right bg-gradient-to-t from-slate-900 via-slate-700 to-slate-500"
+    >
+      <div
+        class="flex flex-col md:flex-row md:items-center md:justify-between md:mx-6 lg:mx-16 text-teal-50"
+      >
+        <div
+          id="copyright"
+          class="font-mono flex-row pb-3 md:pb-0"
+          title="Site by Hugh Lilly (ID 20220344)"
+        >
+          &copy; 2022 Tongariro Cinemas Ltd.
+        </div>
+
+        <div id="image-credits">
+          Logo and icons from
+          <a
+            href="https://iconscout.com/icon-pack/cinema-53"
+            target="_blank"
+            class="underline"
+            >Cinema Icon Pack</a
+          >
+          on <a href="https://iconscout.com" class="underline">IconScout</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
