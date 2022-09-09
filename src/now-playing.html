@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="min-h-screen">
+    <header>
+      <!-- Navigation bar, including logo and mobile menu -->
+      <nav>
+        <div class="relative p-6 mx-auto my-3 md:mx-4 lg:mx-6 xl:mx-10">
+          <!-- Flex container -->
+          <div class="flex place-items-center justify-between">
+            <!-- Logo and wordmark -->
+            <a href="index.html" class="no-underline">
+              <div id="logo-wordmark">
+                <div id="logo" class="flex space-x-4">
+                  <img
+                    src="assets/logos_icons/logo.svg"
+                    alt="Tongariro Cinemas logo"
+                    class="h-[36px] w-[36px]"
+                  />
+                  <div
+                    id="wordmark"
+                    class="flex font-wordmark font-extrabold text-xl uppercase place-items-center"
+                  >
+                    Tongariro Cinemas
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Menu items -->
+            <div id="nav-menu" class="hidden md:flex space-x-6">
+              <a
+                href="now-playing.html"
+                class="hover:text-blue-800 hover:underline hover:underline-offset-4"
+                >Now Playing</a
+              >
+              <a
+                href="tickets.html"
+                class="hover:text-blue-800 hover:underline hover:underline-offset-4"
+                >Tickets</a
+              >
+              <a
+                href="rewards.html"
+                class="hover:text-blue-800 hover:underline hover:underline-offset-4"
+                >Rewards</a
+              >
+              <a
+                href="about.html"
+                class="hover:text-blue-800 hover:underline hover:underline-offset-4"
+                >About Us</a
+              >
+            </div>
+            <!-- Hamburger menu (for mobile screens) -->
+            <button
+              id="hamburger-button"
+              class="block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div
+          id="mobile-menu"
+          class="hidden my-8 mx-20 flex-col items-center self-end py-8 space-y-4 sm:w-auto sm:self-center border"
+        >
+          <a href="now-playing.html" class="">Now Playing</a>
+          <a href="tickets.html" class="">Tickets</a>
+          <a href="rewards.html" class="">Rewards</a>
+          <a href="about.html" class="">About Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="first-of-type:pt-20 last-of-type:pb-20 space-y-14 mx-10">
+      <article class="film-container">
+        <h3 class="film-title text-xl italic text-center pb-5">12 Angry Men</h3>
+        <div class="film-info flex flex-row">
+          <div class="film-metadata">
+            Directed by Sidney Lumet &middot; 1957 &middot; 96 mins.
+          </div>
+          <p class="synopsis">
+            Following the closing arguments in a murder trial, the 12 members of
+            the jury must deliberate, with a guilty verdict meaning death for
+            the accused, an inner-city teen. As the dozen men try to reach a
+            unanimous decision while sequestered in a room, one juror (Henry
+            Fonda) casts considerable doubt on elements of the case. Personal
+            issues soon rise to the surface, and conflict threatens to derail
+            the delicate process that will decide one boy's fate.
+          </p>
+          <img
+            src="assets/stills/12angrymen.jpg"
+            alt="12 Angry Men"
+            class="film-still max-w-[356px] max-h-[200px]"
+            height="200"
+            width="356"
+          />
+          <span class="imdb"
+            ><a
+              href="https://www.imdb.com/title/tt0050083/"
+              class="imdb-link"
+              target="_blank"
+              >IMDb</a
+            ></span
+          >
+          <div class="trailer-embed">
+            <details>
+              <summary>View trailer</summary>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/iWh0pONVnjc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </details>
+          </div>
+        </div>
+      </article>
+
+      <hr class="horizontal-rule" />
+
+      <article class="film-container">
+        <h3 class="film-title text-xl italic text-center pb-5">Psycho</h3>
+        <div class="film-info flex flex-row">
+          <img
+            src="assets/stills/psycho.jpg"
+            alt="Psycho"
+            class="film-still"
+            height="200"
+            width="356"
+          />
+          <div class="film-metadata">
+            Directed by Alfred Hitchcock &middot; 1960 &middot; 109 mins.
+          </div>
+          <p class="synopsis">
+            Phoenix secretary Marion Crane (Janet Leigh), on the lam after
+            stealing $40,000 from her employer in order to run away with her
+            boyfriend, Sam Loomis (John Gavin), is overcome by exhaustion during
+            a heavy rainstorm. Traveling on the back roads to avoid the police,
+            she stops for the night at the ramshackle Bates Motel and meets the
+            polite but highly strung proprietor Norman Bates (Anthony Perkins),
+            a young man with an interest in taxidermy and a difficult
+            relationship with his mother.
+          </p>
+          <span class="imdb"
+            ><a
+              href="https://www.imdb.com/title/tt0054215/"
+              class="imdb-link"
+              target="_blank"
+              >IMDb</a
+            ></span
+          >
+          <div class="trailer-embed">
+            <details>
+              <summary>View trailer</summary>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/DTJQfFQ40lI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </details>
+          </div>
+        </div>
+      </article>
+
+      <hr class="horizontal-rule" />
+
+      <article class="film-container">
+        <h3 class="film-title text-xl italic text-center pb-5">Rear Window</h3>
+        <div class="film-info flex flex-row">
+          <img
+            src="assets/stills/rear-window.jpg"
+            alt="Rear Window"
+            class="film-still"
+            height="200"
+            width="356"
+          />
+          <div class="film-metadata">
+            Directed by Alfred Hitchcock &middot; 1954 &middot; 112 mins.
+          </div>
+          <p class="synopsis">
+            The story of a recuperating news photographer who believes he has
+            witnessed a murder. Confined to a wheelchair after an accident, he
+            spends his time watching the occupants of neighbouring apartments
+            through a telephoto lens and binoculars and becomes convinced that a
+            murder has taken place.
+          </p>
+          <span class="imdb"
+            ><a
+              href="https://www.imdb.com/title/tt0047396/"
+              class="imdb-link"
+              target="_blank"
+              >IMDb</a
+            ></span
+          >
+          <div class="trailer-embed">
+            <details>
+              <summary>View trailer</summary>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Ob_Sq__g01E"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </details>
+          </div>
+        </div>
+      </article>
+
+      <hr class="horizontal-rule" />
+
+      <article class="film-container">
+        <h3 class="film-title text-xl italic text-center pb-5">Vertigo</h3>
+        <div class="film-info flex flex-row">
+          <img
+            src="assets/stills/vertigo.jpg"
+            alt="Vertigo"
+            class="film-still"
+            height="200"
+            width="356"
+          />
+          <div class="film-metadata">
+            Directed by Alfred Hitchcock &middot; 1958 &middot; 128 mins.
+          </div>
+          <p class="synopsis">
+            An ex-police officer who suffers from an intense fear of heights is
+            hired to prevent an old friend's wife from committing suicide, but
+            all is not as it seems. Hitchcock's haunting, compelling masterpiece
+            is uniquely revelatory about the director's own predilections and
+            hang-ups and is widely considered to be one of his masterworks.
+          </p>
+          <span class="imdb"
+            ><a
+              href="https://www.imdb.com/title/tt0052357/"
+              class="imdb-link"
+              target="_blank"
+              >IMDb</a
+            ></span
+          >
+          <div class="trailer-embed">
+            <details>
+              <summary>View trailer</summary>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/95o-QM-lz8g"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </details>
+          </div>
+        </div>
+      </article>
+
+      <hr class="horizontal-rule" />
+
+      <article class="film-container">
+        <h3 class="film-title text-xl italic text-center pb-5">
+          Seven Samurai
+        </h3>
+        <div class="film-info flex flex-row">
+          <img
+            src="assets/stills/samurai.jpg"
+            alt="Seven Samurai"
+            class="film-still"
+            height="200"
+            width="356"
+          />
+          <div class="film-metadata">
+            Directed by Elia Kazan &middot; 1954 &middot; 108 mins.
+          </div>
+          <p class="synopsis">
+            A samurai answers a village's request for protection after he falls
+            on hard times. The town needs protection from bandits, so the
+            samurai gathers six others to help him teach the people how to
+            defend themselves, and the villagers provide the soldiers with food.
+            A giant battle occurs when 40 bandits attack the village.
+          </p>
+          <span class="imdb"
+            ><a
+              href="https://www.imdb.com/title/tt0047478/"
+              class="imdb-link"
+              target="_blank"
+              >IMDb</a
+            ></span
+          >
+          <div class="trailer-embed">
+            <details>
+              <summary>View trailer</summary>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/7mw6LyyoeGE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </details>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer
+      class="sticky top-[100vh] m-auto text-xs p-10 place-items-end text-center md:text-right bg-gradient-to-t from-slate-900 via-slate-700 to-slate-500"
+    >
+      <div
+        class="flex flex-col md:flex-row md:items-center md:justify-between md:mx-6 lg:mx-16 text-teal-50"
+      >
+        <div
+          id="copyright"
+          class="font-mono flex-row pb-3 md:pb-0"
+          title="Site by Hugh Lilly (ID 20220344)"
+        >
+          &copy; 2022 Tongariro Cinemas Ltd.
+        </div>
+        <div id="image-credits">
+          Logo and icons from
+          <a
+            href="https://iconscout.com/icon-pack/cinema-53"
+            target="_blank"
+            class="underline"
+            >Cinema Icon Pack</a
+          >
+          on <a href="https://iconscout.com" class="underline">IconScout</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
