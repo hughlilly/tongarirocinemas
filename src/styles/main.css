@@ -51,3 +51,30 @@
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(8px) translate(-8px);
 }
+
+/* IMDb links */
+
+.imdb-link {
+  background-color: rgb(245, 197, 24);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: #000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Trailer buttons */
+
+.trailer-embed {
+  /* color: #fff; */
+  padding: 0.5rem 1rem;
+  max-width: 10rem;
+  border-radius: 1rem;
+}
+
+.trailer-embed:hover {
+  color: rgb(255, 81, 71);
+  cursor: pointer;
+}

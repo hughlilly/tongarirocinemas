@@ -87,50 +87,61 @@
       </nav>
     </header>
 
-    <main class="first-of-type:pt-20 last-of-type:pb-20 space-y-14 mx-10">
+    <main
+      class="first-of-type:pt-20 last-of-type:pb-20 space-y-14 mx-auto max-w-4xl"
+    >
       <article class="film-container">
-        <h3 class="film-title text-xl italic text-center pb-5">12 Angry Men</h3>
-        <div class="film-info flex flex-row">
-          <div class="film-metadata">
-            Directed by Sidney Lumet &middot; 1957 &middot; 96 mins.
+        <div class="film-info">
+          <div class="film-data pb-5">
+            <h3 class="film-title text-xl italic text-center pb-1">
+              12 Angry Men
+            </h3>
+            <div class="film-metadata text-sm text-center">
+              Directed by Sidney Lumet &middot; 1957 &middot; 96 mins.
+            </div>
           </div>
-          <p class="synopsis">
-            Following the closing arguments in a murder trial, the 12 members of
-            the jury must deliberate, with a guilty verdict meaning death for
-            the accused, an inner-city teen. As the dozen men try to reach a
-            unanimous decision while sequestered in a room, one juror (Henry
-            Fonda) casts considerable doubt on elements of the case. Personal
-            issues soon rise to the surface, and conflict threatens to derail
-            the delicate process that will decide one boy's fate.
-          </p>
-          <img
-            src="assets/stills/12angrymen.jpg"
-            alt="12 Angry Men"
-            class="film-still max-w-[356px] max-h-[200px]"
-            height="200"
-            width="356"
-          />
-          <span class="imdb"
-            ><a
-              href="https://www.imdb.com/title/tt0050083/"
-              class="imdb-link"
-              target="_blank"
-              >IMDb</a
-            ></span
+          <div class="synopsis-image pb-5 flex flex-col-reverse md:flex-row">
+            <p class="synopsis mx-5 my-auto md:mr-10">
+              Following the closing arguments in a murder trial, the 12 members
+              of the jury must deliberate, with a guilty verdict meaning death
+              for the accused, an inner-city teen. As the dozen men try to reach
+              a unanimous decision while sequestered in a room, one juror (Henry
+              Fonda) casts considerable doubt on elements of the case. Personal
+              issues soon rise to the surface, and conflict threatens to derail
+              the delicate process that will decide one boy's fate.
+            </p>
+            <img
+              src="assets/stills/12angrymen.jpg"
+              alt="12 Angry Men"
+              class="film-still max-w-[356px] max-h-[200px] self-center mb-5 md:mb-0 md:mr-5"
+              height="200"
+              width="356"
+            />
+          </div>
+          <div
+            class="trailer-imdb mx-10 space-x-5 flex flex-col items-center space-y-5 py-5 md:space-y-0 md:py-0 md:flex-row"
           >
-          <div class="trailer-embed">
-            <details>
-              <summary>View trailer</summary>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/iWh0pONVnjc"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </details>
+            <div class="imdb cursor-pointer">
+              <a
+                href="https://www.imdb.com/title/tt0050083/"
+                class="imdb-link hover:text-white"
+                target="_blank"
+                >IMDb</a
+              >
+            </div>
+            <div class="trailer-embed">
+              <details>
+                <summary>View trailer</summary>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/iWh0pONVnjc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </details>
+            </div>
           </div>
         </div>
       </article>
@@ -138,49 +149,56 @@
       <hr class="horizontal-rule" />
 
       <article class="film-container">
-        <h3 class="film-title text-xl italic text-center pb-5">Psycho</h3>
-        <div class="film-info flex flex-row">
-          <img
-            src="assets/stills/psycho.jpg"
-            alt="Psycho"
-            class="film-still"
-            height="200"
-            width="356"
-          />
-          <div class="film-metadata">
-            Directed by Alfred Hitchcock &middot; 1960 &middot; 109 mins.
+        <div class="film-info">
+          <div class="film-data pb-5">
+            <h3 class="film-title text-xl italic text-center pb-5">Psycho</h3>
+            <div class="film-metadata text-sm text-center">
+              Directed by Alfred Hitchcock &middot; 1960 &middot; 109 mins.
+            </div>
           </div>
-          <p class="synopsis">
-            Phoenix secretary Marion Crane (Janet Leigh), on the lam after
-            stealing $40,000 from her employer in order to run away with her
-            boyfriend, Sam Loomis (John Gavin), is overcome by exhaustion during
-            a heavy rainstorm. Traveling on the back roads to avoid the police,
-            she stops for the night at the ramshackle Bates Motel and meets the
-            polite but highly strung proprietor Norman Bates (Anthony Perkins),
-            a young man with an interest in taxidermy and a difficult
-            relationship with his mother.
-          </p>
-          <span class="imdb"
-            ><a
-              href="https://www.imdb.com/title/tt0054215/"
-              class="imdb-link"
-              target="_blank"
-              >IMDb</a
-            ></span
+          <div class="synopsis-image pb-5 flex flex-col-reverse md:flex-row">
+            <p class="synopsis mx-5 my-auto md:mr-10">
+              Phoenix secretary Marion Crane (Janet Leigh), on the lam after
+              stealing $40,000 from her employer in order to run away with her
+              boyfriend, Sam Loomis (John Gavin), is overcome by exhaustion
+              during a heavy rainstorm. Traveling on the back roads to avoid the
+              police, she stops for the night at the ramshackle Bates Motel and
+              meets the polite but highly strung proprietor Norman Bates
+              (Anthony Perkins), a young man with an interest in taxidermy and a
+              difficult relationship with his mother.
+            </p>
+            <img
+              src="assets/stills/psycho.jpg"
+              alt="Psycho"
+              class="film-still max-w-[356px] max-h-[200px] self-center mb-5 md:mb-0 md:mr-5"
+              height="200"
+              width="356"
+            />
+          </div>
+          <div
+            class="trailer-imdb mx-10 space-x-5 flex flex-col items-center space-y-5 py-5 md:space-y-0 md:py-0 md:flex-row"
           >
-          <div class="trailer-embed">
-            <details>
-              <summary>View trailer</summary>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/DTJQfFQ40lI"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </details>
+            <span class="imdb"
+              ><a
+                href="https://www.imdb.com/title/tt0054215/"
+                class="imdb-link"
+                target="_blank"
+                >IMDb</a
+              ></span
+            >
+            <div class="trailer-embed">
+              <details>
+                <summary>View trailer</summary>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/DTJQfFQ40lI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </details>
+            </div>
           </div>
         </div>
       </article>
@@ -188,46 +206,55 @@
       <hr class="horizontal-rule" />
 
       <article class="film-container">
-        <h3 class="film-title text-xl italic text-center pb-5">Rear Window</h3>
-        <div class="film-info flex flex-row">
-          <img
-            src="assets/stills/rear-window.jpg"
-            alt="Rear Window"
-            class="film-still"
-            height="200"
-            width="356"
-          />
-          <div class="film-metadata">
-            Directed by Alfred Hitchcock &middot; 1954 &middot; 112 mins.
+        <div class="film-info">
+          <div class="film-data pb-5">
+            <h3 class="film-title text-xl italic text-center pb-5">
+              Rear Window
+            </h3>
+            <div class="film-metadata text-sm text-center">
+              Directed by Alfred Hitchcock &middot; 1954 &middot; 112 mins.
+            </div>
           </div>
-          <p class="synopsis">
-            The story of a recuperating news photographer who believes he has
-            witnessed a murder. Confined to a wheelchair after an accident, he
-            spends his time watching the occupants of neighbouring apartments
-            through a telephoto lens and binoculars and becomes convinced that a
-            murder has taken place.
-          </p>
-          <span class="imdb"
-            ><a
-              href="https://www.imdb.com/title/tt0047396/"
-              class="imdb-link"
-              target="_blank"
-              >IMDb</a
-            ></span
+          <div class="synopsis-image pb-5 flex flex-col-reverse md:flex-row">
+            <p class="synopsis mx-5 my-auto md:mr-10">
+              The story of a recuperating news photographer who believes he has
+              witnessed a murder. Confined to a wheelchair after an accident, he
+              spends his time watching the occupants of neighbouring apartments
+              through a telephoto lens and binoculars and becomes convinced that
+              a murder has taken place.
+            </p>
+            <img
+              src="assets/stills/rear-window.jpg"
+              alt="Rear Window"
+              class="film-still max-w-[356px] max-h-[200px] self-center mb-5 md:mb-0 md:mr-5"
+              height="200"
+              width="356"
+            />
+          </div>
+          <div
+            class="trailer-imdb mx-10 space-x-5 flex flex-col items-center space-y-5 py-5 md:space-y-0 md:py-0 md:flex-row"
           >
-          <div class="trailer-embed">
-            <details>
-              <summary>View trailer</summary>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/Ob_Sq__g01E"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </details>
+            <span class="imdb"
+              ><a
+                href="https://www.imdb.com/title/tt0047396/"
+                class="imdb-link"
+                target="_blank"
+                >IMDb</a
+              ></span
+            >
+            <div class="trailer-embed">
+              <details>
+                <summary>View trailer</summary>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/Ob_Sq__g01E"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </details>
+            </div>
           </div>
         </div>
       </article>
@@ -235,46 +262,54 @@
       <hr class="horizontal-rule" />
 
       <article class="film-container">
-        <h3 class="film-title text-xl italic text-center pb-5">Vertigo</h3>
-        <div class="film-info flex flex-row">
-          <img
-            src="assets/stills/vertigo.jpg"
-            alt="Vertigo"
-            class="film-still"
-            height="200"
-            width="356"
-          />
-          <div class="film-metadata">
-            Directed by Alfred Hitchcock &middot; 1958 &middot; 128 mins.
+        <div class="film-info">
+          <div class="film-data pb-5">
+            <h3 class="film-title text-xl italic text-center pb-5">Vertigo</h3>
+            <div class="film-metadata text-sm text-center">
+              Directed by Alfred Hitchcock &middot; 1958 &middot; 128 mins.
+            </div>
           </div>
-          <p class="synopsis">
-            An ex-police officer who suffers from an intense fear of heights is
-            hired to prevent an old friend's wife from committing suicide, but
-            all is not as it seems. Hitchcock's haunting, compelling masterpiece
-            is uniquely revelatory about the director's own predilections and
-            hang-ups and is widely considered to be one of his masterworks.
-          </p>
-          <span class="imdb"
-            ><a
-              href="https://www.imdb.com/title/tt0052357/"
-              class="imdb-link"
-              target="_blank"
-              >IMDb</a
-            ></span
+          <div class="synopsis-image pb-5 flex flex-col-reverse md:flex-row">
+            <p class="synopsis mx-5 my-auto md:mr-10">
+              An ex-police officer who suffers from an intense fear of heights
+              is hired to prevent an old friend's wife from committing suicide,
+              but all is not as it seems. Hitchcock's haunting, compelling
+              masterpiece is uniquely revelatory about the director's own
+              predilections and hang-ups and is widely considered to be one of
+              his masterworks.
+            </p>
+            <img
+              src="assets/stills/vertigo.jpg"
+              alt="Vertigo"
+              class="film-still max-w-[356px] max-h-[200px] self-center mb-5 md:mb-0 md:mr-5"
+              height="200"
+              width="356"
+            />
+          </div>
+          <div
+            class="trailer-imdb mx-10 space-x-5 flex flex-col items-center space-y-5 py-5 md:space-y-0 md:py-0 md:flex-row"
           >
-          <div class="trailer-embed">
-            <details>
-              <summary>View trailer</summary>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/95o-QM-lz8g"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </details>
+            <span class="imdb"
+              ><a
+                href="https://www.imdb.com/title/tt0052357/"
+                class="imdb-link"
+                target="_blank"
+                >IMDb</a
+              ></span
+            >
+            <div class="trailer-embed">
+              <details>
+                <summary>View trailer</summary>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/95o-QM-lz8g"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </details>
+            </div>
           </div>
         </div>
       </article>
@@ -282,48 +317,55 @@
       <hr class="horizontal-rule" />
 
       <article class="film-container">
-        <h3 class="film-title text-xl italic text-center pb-5">
-          Seven Samurai
-        </h3>
-        <div class="film-info flex flex-row">
-          <img
-            src="assets/stills/samurai.jpg"
-            alt="Seven Samurai"
-            class="film-still"
-            height="200"
-            width="356"
-          />
-          <div class="film-metadata">
-            Directed by Elia Kazan &middot; 1954 &middot; 108 mins.
+        <div class="film-info">
+          <div class="film-data pb-5">
+            <h3 class="film-title text-xl italic text-center pb-5">
+              Seven Samurai
+            </h3>
+            <div class="film-metadata text-sm text-center">
+              Directed by Elia Kazan &middot; 1954 &middot; 108 mins.
+            </div>
           </div>
-          <p class="synopsis">
-            A samurai answers a village's request for protection after he falls
-            on hard times. The town needs protection from bandits, so the
-            samurai gathers six others to help him teach the people how to
-            defend themselves, and the villagers provide the soldiers with food.
-            A giant battle occurs when 40 bandits attack the village.
-          </p>
-          <span class="imdb"
-            ><a
-              href="https://www.imdb.com/title/tt0047478/"
-              class="imdb-link"
-              target="_blank"
-              >IMDb</a
-            ></span
+          <div class="synopsis-image pb-5 flex flex-col-reverse md:flex-row">
+            <p class="synopsis mx-5 my-auto md:mr-10">
+              A samurai answers a village's request for protection after he
+              falls on hard times. The town needs protection from bandits, so
+              the samurai gathers six others to help him teach the people how to
+              defend themselves, and the villagers provide the soldiers with
+              food. A giant battle occurs when 40 bandits attack the village.
+            </p>
+            <img
+              src="assets/stills/samurai.jpg"
+              alt="Seven Samurai"
+              class="film-still max-w-[356px] max-h-[200px] self-center mb-5 md:mb-0 md:mr-5"
+              height="200"
+              width="356"
+            />
+          </div>
+          <div
+            class="trailer-imdb mx-10 space-x-5 flex flex-col items-center space-y-5 py-5 md:space-y-0 md:py-0 md:flex-row"
           >
-          <div class="trailer-embed">
-            <details>
-              <summary>View trailer</summary>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/7mw6LyyoeGE"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </details>
+            <span class="imdb"
+              ><a
+                href="https://www.imdb.com/title/tt0047478/"
+                class="imdb-link"
+                target="_blank"
+                >IMDb</a
+              ></span
+            >
+            <div class="trailer-embed">
+              <details>
+                <summary>View trailer</summary>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/7mw6LyyoeGE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </details>
+            </div>
           </div>
         </div>
       </article>
