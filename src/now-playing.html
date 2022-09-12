@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
+    <title>Tongariro Cinemas — Now Playing</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,8 @@
       rel="stylesheet"
     />
     <link href="/dist/output.css" rel="stylesheet" />
+
+    <script src="scripts/trailers.js" type="module" defer></script>
   </head>
 
   <body class="min-h-screen">
@@ -87,8 +89,9 @@
       </nav>
     </header>
 
+    <!-- Main page content -->
     <main
-      class="first-of-type:pt-20 last-of-type:pb-20 space-y-14 mx-auto max-w-4xl"
+      class="first-of-type:pt-20 last-of-type:pb-56 space-y-14 mx-auto max-w-4xl"
     >
       <article class="film-container">
         <div class="film-info">
@@ -119,7 +122,7 @@
             />
           </div>
           <div
-            class="trailer-imdb mx-10 space-x-5 flex flex-col items-center space-y-5 py-5 md:space-y-0 md:py-0 md:flex-row"
+            class="trailer-imdb mx-10 flex flex-col items-center space-y-4 md:space-y-0 md:space-x-4 md:flex-row"
           >
             <div class="imdb cursor-pointer">
               <a
@@ -129,18 +132,12 @@
                 >IMDb</a
               >
             </div>
-            <div class="trailer-embed">
-              <details>
-                <summary>View trailer</summary>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/iWh0pONVnjc"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </details>
+
+            <div
+              class="trailer-button flex flex-row cursor-pointer hover:text-black"
+              data-videoID="iWh0pONVnjc"
+            >
+              &#9658;&nbsp;Play trailer
             </div>
           </div>
         </div>
@@ -186,18 +183,11 @@
                 >IMDb</a
               ></span
             >
-            <div class="trailer-embed">
-              <details>
-                <summary>View trailer</summary>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/DTJQfFQ40lI"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </details>
+            <div
+              class="trailer-button flex flex-row cursor-pointer hover:text-black"
+              data-videoID="DTJQfFQ40lI"
+            >
+              &#9658;&nbsp;Play trailer
             </div>
           </div>
         </div>
@@ -242,18 +232,11 @@
                 >IMDb</a
               ></span
             >
-            <div class="trailer-embed">
-              <details>
-                <summary>View trailer</summary>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/Ob_Sq__g01E"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </details>
+            <div
+              class="trailer-button flex flex-row cursor-pointer hover:text-black"
+              data-videoID="Ob_Sq__g01E"
+            >
+              &#9658;&nbsp;Play trailer
             </div>
           </div>
         </div>
@@ -297,18 +280,11 @@
                 >IMDb</a
               ></span
             >
-            <div class="trailer-embed">
-              <details>
-                <summary>View trailer</summary>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/95o-QM-lz8g"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </details>
+            <div
+              class="trailer-button flex flex-row cursor-pointer hover:text-black"
+              data-videoID="95o-QM-lz8g"
+            >
+              &#9658;&nbsp;Play trailer
             </div>
           </div>
         </div>
@@ -353,23 +329,47 @@
                 >IMDb</a
               ></span
             >
-            <div class="trailer-embed">
-              <details>
-                <summary>View trailer</summary>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/7mw6LyyoeGE"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </details>
+            <div
+              class="trailer-button flex flex-row cursor-pointer hover:text-black"
+              data-videoID="7mw6LyyoeGE"
+            >
+              &#9658;&nbsp;Play trailer
             </div>
           </div>
         </div>
       </article>
     </main>
+
+    <!-- End main content -->
+
+    <!-- Insertion point for trailers in dialogs, to be rendered on the fly
+      when each button is clicked; see scripts/trailers.js for implementation -->
+    <div id="trailer">
+      <dialog
+        id="modal"
+        class="modal border aspect-video max-w-lg min-w-[95vw] lg:min-w-[75vw] lg:max-h-[75vh]"
+      >
+        <div class="close-space flex flex-row justify-between">
+          <div class="space"></div>
+          <div
+            id="close-btn"
+            class="text-xl font-bold pb-2 pr-1 cursor-pointer"
+          >
+            &times;
+          </div>
+        </div>
+        <!-- No `src` attribute in the iframe yet; this is added dynamically based on the
+          `data-videoID` HTML attribute from the "Play trailer" div -->
+        <iframe
+          id="embedded-trailer"
+          width="100%"
+          height="100%"
+          title="YouTube video player"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </dialog>
+    </div>
 
     <footer
       class="sticky top-[100vh] m-auto text-xs p-10 place-items-end text-center md:text-right bg-gradient-to-t from-slate-900 via-slate-700 to-slate-500"

@@ -52,6 +52,7 @@
   transform: rotate(-45deg) translateY(8px) translate(-8px);
 }
 
+/* TODO: Move these into Tailwind classes */
 /* IMDb links */
 
 .imdb-link {
@@ -65,16 +66,18 @@
   font-size: 1.2rem;
 }
 
-/* Trailer buttons */
+/* "Play trailer" buttons */
 
-.trailer-embed {
-  /* color: #fff; */
+.trailer-button {
+  background: red;
+  color: white;
+  font-weight: bold;
   padding: 0.5rem 1rem;
-  max-width: 10rem;
   border-radius: 1rem;
+  border: 1px lightgrey solid;
 }
 
-.trailer-embed:hover {
-  color: rgb(255, 81, 71);
-  cursor: pointer;
+/* Trailer modals */
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.4);
 }
