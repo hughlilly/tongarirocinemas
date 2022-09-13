@@ -72,3 +72,14 @@ function updateTotal() {
   // Update total when value changes, to two decimal places
   totalDiv.textContent = `${total.toFixed(2)}`;
 }
+
+// Reset button -- when clicked, set everything back to zero
+document.getElementById("reset").addEventListener("click", () => {
+  document.getElementById("adult").innerText = 0;
+  document.getElementById("child").innerText = 0;
+  document.getElementById("conc").innerText = 0;
+  countAdult = 0;
+  countChild = 0;
+  countConc = 0;
+  totalDiv.textContent = "0.00";
+});
