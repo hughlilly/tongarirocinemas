@@ -7,10 +7,10 @@ const trailerButtons = document.querySelectorAll(".trailer-button");
 // Iterate over NodeList, creating an event listener for each element
 trailerButtons.forEach((dialog) => {
   dialog.addEventListener("click", (event) => {
-    // Get YouTube video ID from HTML data- attribute
+    // Get YouTube video ID from HTML `data-videoID` attribute
     const videoID = event.target.dataset.videoid;
 
-    // Update `src`attribute, set `enablejsapi` to 1 (true)
+    // Update `src` attribute, setting `enablejsapi` to 1 (true)
     // This allows us to pause the video later on; see
     // https://developers.google.com/youtube/player_parameters
     embeddedTrailer.setAttribute(
@@ -30,8 +30,11 @@ trailerButtons.forEach((dialog) => {
         '{"event":"command","func":"pauseVideo","args":""}',
         "*"
       );
-      // Remove the "src" attribute so that when the modal is next displayed, the previous trailer isn't shown (briefly)
+      // Remove the "src" attribute so that when the modal is next displayed,
+      // the previous trailer isn't shown (briefly)
       embeddedTrailer.removeAttribute("src");
+
+      // Close the modal
       modal.close();
     });
   });
