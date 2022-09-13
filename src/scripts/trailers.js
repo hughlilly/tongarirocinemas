@@ -1,3 +1,6 @@
+// Dynamically loads a YouTube iframe in a <dialog> element
+// at the end of the HTML file
+
 // Get iframe element to manipulate
 const embeddedTrailer = document.getElementById("embedded-trailer");
 
