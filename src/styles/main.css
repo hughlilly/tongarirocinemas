@@ -82,7 +82,7 @@
   background: rgb(0 0 0 / 0.4);
 }
 
-/* Tickets page */
+/* Tickets page: add "$" and &thinsp; (U+2009) before amount */
 .price::before {
-  content: "$";
+  content: "$\2009";
 }
