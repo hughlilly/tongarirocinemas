@@ -82,6 +82,11 @@
   background: rgb(0 0 0 / 0.4);
 }
 
+/* When a modal is open, this class is added to the <body> element, preventing scrolling */
+.modal-open {
+  overflow: hidden;
+}
+
 /* Tickets page: add "$" and &thinsp; (U+2009) before amount */
 .price::before {
   content: "$\2009";
