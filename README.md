@@ -23,7 +23,7 @@
 
 This repository contains the website for the IT5005 Project (Web Implementation). The author is Hugh Lilly (ID 20220344).
 
-The site presented alongside this report took three weeks to create, from sketching designs to finalising functionality. It provides a number of features that provide end-users with the abililty to:
+The site presented alongside this report took three weeks to create, from sketching designs to finalising functionality. It uses [Tailwind CSS](http://tailwindcss.com), a utility-first CSS framework, and provides a number of features that give end-users the abililty to:
 
 1. View a list of currently playing films (the **Now Playing** page)
 1. Calculate the cost of a selection of tickets (the **Tickets** page)
@@ -141,10 +141,10 @@ The site could be upgraded to the component-based JavaScript framwork [React](ht
 
 Moving development to React could provide:
 
-- The ability to load the whole site as one application, navigating between "routes" instead of individual HTML pages
-- The ability to create single components that return multiple iterations of a particular HTML element, for example by mapping over data on films, or other repeated page elements such as the Home page blurbs that lead to other parts of the site.
-- The administrative panel for content could be contained in several JSON objects, and stored securely in individual `.js` files alongside the application itself.
-- The need for multiple HTML pages each with a copy of the header and footer would be removed, greatly improving maintainability.
+1. The ability to load the whole site as one application, navigating between "routes" instead of individual HTML pages
+1. The ability to create single components that return multiple iterations of a particular HTML element, for example by mapping over data on films, or other repeated page elements such as the Home page blurbs that lead to other parts of the site.
+1. The administrative panel for content could be contained in several JSON objects, and stored securely in individual `.js` files alongside the application itself.
+1. The need for multiple HTML pages each with a copy of the header and footer would be removed, greatly improving maintainability.
 
 ## Contact
 
