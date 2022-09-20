@@ -1,11 +1,11 @@
-/* 
+/*
 // Mobile menu
-// 
+//
 // If js is not enabled, mobile users will
 // not be able to use the menu
-// 
+//
 // Based on https://github.com/bradtraversy/tailwind-landing-page/
-// 
+//
 */
 
 // Get buttons to manipulate

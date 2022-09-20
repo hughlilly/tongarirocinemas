@@ -4,18 +4,26 @@
   "description": "Tongariro Cinemas website",
   "source": "src/index.html",
   "scripts": {
+    "open": "serve dist",
     "start": "parcel",
-    "build": "parcel build",
     "format": "prettier --write \"src/**/*.{js,html}\"",
     "format:check": "prettier --check \"src/**/*.{js,html}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --fix",
     "watch": "npx tailwindcss -i ./src/styles/main.css -o ./dist/output.css --watch",
-    "build:tw": "npx tailwindcss -i ./src/styles/main.css -o ./dist/output.css",
-    "open": "serve dist"
+    "build": "parcel build",
+    "build:tw": "npx tailwindcss -i ./src/styles/main.css -o ./dist/output.css"
   },
   "keywords": [ ],
   "author": "Hugh Lilly",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
     "parcel": "^2.7.0",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8"

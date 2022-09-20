@@ -71,7 +71,7 @@ The source code for the site is in the `/src` directory. There is an HTML page f
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://npmjs.org)
 
-The development dependencies are [parcel.js](http://parceljs.org) and Tailwind. There are no production dependencies.
+The development dependencies are [parcel.js](http://parceljs.org), eslint, prettier, and Tailwind. There are no production dependencies.
 
 ### Installation
 
