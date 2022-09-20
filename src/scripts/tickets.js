@@ -13,6 +13,16 @@ const adultPrice = 18;
 const childPrice = 14.5;
 const concPrice = 11.5;
 
+// Function run each time count changes
+function updateTotal() {
+  // Calculate total
+  const total =
+    adultPrice * countAdult + childPrice * countChild + concPrice * countConc;
+
+  // Update total when value changes, to two decimal places
+  totalDiv.textContent = `${total.toFixed(2)}`;
+}
+
 decreaseButtons.forEach((decrease) => {
   decrease.addEventListener("click", (event) => {
     const countToChange = event.target.dataset.countName;
@@ -62,16 +72,6 @@ increaseButtons.forEach((increase) => {
     }
   });
 });
-
-// Function run each time count changes
-function updateTotal() {
-  // Calculate total
-  const total =
-    adultPrice * countAdult + childPrice * countChild + concPrice * countConc;
-
-  // Update total when value changes, to two decimal places
-  totalDiv.textContent = `${total.toFixed(2)}`;
-}
 
 // Reset button -- when clicked, set everything back to zero
 document.getElementById("reset").addEventListener("click", () => {
