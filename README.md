@@ -23,7 +23,7 @@
 
 This repository contains the website for the IT5005 Project (Web Implementation). The author is Hugh Lilly (ID 20220344).
 
-The site presented alongside this report took three weeks to create, from sketching designs to finalising functionality. It uses [Tailwind CSS](http://tailwindcss.com), a utility-first CSS framework, and provides a number of features that give end-users the abililty to:
+The site presented alongside this report took three weeks to create, from sketching designs to finalising functionality. It uses [Tailwind CSS](http://tailwindcss.com), a utility-first CSS framework, and provides a number of features that give end-users the ability to:
 
 1. View a list of currently playing films (the **Now Playing** page)
 1. Calculate the cost of a selection of tickets (the **Tickets** page)
